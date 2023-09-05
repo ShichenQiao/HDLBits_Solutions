@@ -3,7 +3,7 @@ module top_module (
     input x,
     output z
 ); 
-	wire ff1, ff2, ff3;
+    wire ff1, ff2, ff3;
     
     always_ff @(posedge clk) begin
         ff1 <= x ^ ff1;

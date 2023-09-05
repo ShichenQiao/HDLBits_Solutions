@@ -5,5 +5,5 @@ module top_module (
 
     always @(ena)
         if (ena)
-        	q <= d;
+            q <= d;
 endmodule

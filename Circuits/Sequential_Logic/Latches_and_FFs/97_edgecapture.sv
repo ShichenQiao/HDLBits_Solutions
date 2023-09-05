@@ -21,5 +21,5 @@ module edge_dect (
         if(reset)
             nedge <= 1'b0;
         else if(!in & in_ff)
-        	nedge <= 1'b1;
+            nedge <= 1'b1;
 endmodule
