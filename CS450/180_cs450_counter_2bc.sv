@@ -12,7 +12,7 @@ module top_module(
     	else if(train_valid)
             if(train_taken)
             	state <= state == 2'b11 ? 2'b11 : state + 2'b01;
-    		else
+    	    else
                 state <= state == 2'b00 ? 2'b00 : state - 2'b01;
 
 endmodule
