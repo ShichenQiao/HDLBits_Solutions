@@ -9,7 +9,7 @@ module top_module(
 
     always_ff @(posedge clk) begin
         if(reset) begin
-       		hh <= 8'h12;
+       	    hh <= 8'h12;
             mm <= 8'h00;
             ss <= 8'h00;
             pm <= 1'b0;
