@@ -12,7 +12,7 @@ module top_module (
             ff3 <= 1'b0;
             out <= 1'b0;
         end
-   		else begin
+   	else begin
             ff1 <= in;
             ff2 <= ff1;
             ff3 <= ff2;
