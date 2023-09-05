@@ -18,7 +18,7 @@ module top_module (
     
     wire done_counting;
 
-	always_comb
+    always_comb
         case(state)
             IDLE: nxt_state = data ? A : IDLE;
             A: nxt_state = data ? B : IDLE;
