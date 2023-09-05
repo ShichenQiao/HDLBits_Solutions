@@ -43,7 +43,7 @@ module top_module(
                         set_done = 1'b1;
                         nxt_state = IDLE;
                     end
-            		else
+            	    else
                         nxt_state = FAIL;
             FAIL: if(in) nxt_state = IDLE;
         endcase

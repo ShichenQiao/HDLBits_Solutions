@@ -15,7 +15,7 @@ module top_module (
         if(reset)
             state <= BS1;
     	else
-    		state <= nxt_state;
+    	    state <= nxt_state;
     
     reg set_dfr, clr_dfr;
     always_ff @(posedge clk)
@@ -32,7 +32,7 @@ module top_module (
         fr1 = 1'b0;
         set_dfr = 1'b0;
         clr_dfr = 1'b0;
-        nxt_state =	state;
+        nxt_state = state;
         
         case(state)
             AS3: begin

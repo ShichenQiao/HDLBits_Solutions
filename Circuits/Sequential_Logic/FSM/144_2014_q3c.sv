@@ -5,7 +5,7 @@ module top_module (
     output Y0,
     output z
 );
-	always_comb begin
+    always_comb begin
         case(y)
             3'b000: Y0 = x;
             3'b001: Y0 = !x;

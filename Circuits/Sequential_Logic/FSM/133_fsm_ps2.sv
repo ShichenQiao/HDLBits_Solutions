@@ -13,7 +13,7 @@ module top_module(
     	else
             state <= nxt_state;
     // State flip-flops (sequential)
- 	always_comb begin
+    always_comb begin
         case(state)
             IDLE: nxt_state = in[3] ? ONE : IDLE;
             ONE: nxt_state = TWO;

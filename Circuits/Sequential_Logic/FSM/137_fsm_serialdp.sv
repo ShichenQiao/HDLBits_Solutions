@@ -43,7 +43,7 @@ module top_module(
                         set_done = 1'b1;
                         nxt_state = IDLE;
                     end
-            		else
+            	    else
                         nxt_state = FAIL;
             FAIL: if(in) nxt_state = IDLE;
         endcase
@@ -58,7 +58,7 @@ module top_module(
     wire odd;
     parity ip (clk, rst_cnt, in, odd);
 	
-	always_ff @(posedge clk)
+    always_ff @(posedge clk)
         if(set_done & odd)
             done <= 1'b1;
     	else
