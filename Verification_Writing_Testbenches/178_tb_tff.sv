@@ -1,5 +1,5 @@
 module top_module ();
-	reg clk, reset, t, q;
+    reg clk, reset, t, q;
     tff iDUT(clk, reset, t, q);
     
     initial begin
