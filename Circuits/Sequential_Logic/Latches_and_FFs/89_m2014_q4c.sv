@@ -1,0 +1,12 @@
+module top_module (
+    input clk,
+    input d, 
+    input r,   // synchronous reset
+    output q);
+
+    always_ff @(posedge clk)
+        if(r)
+            q <= 1'b0;
+    	else
+            q <= d;
+endmodule
